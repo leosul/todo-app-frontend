@@ -83,3 +83,9 @@ export default class Todo extends Component {
         )
     }
 }
+
+function mapStateToProps(state) {
+    return {
+        value: state.description.value
+    }
+}
